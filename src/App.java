@@ -1,19 +1,14 @@
-package App;
-
-import java.util.Scanner;
-
 public class App {
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
+        sayHello();
+        sayHello("John");
+    }
 
-        System.out.print("Enter your name: ");
-        String name = s.nextLine();
+    public static void sayHello() {
+        System.out.println("Hello, world");
+    }
 
-        System.out.print("Enter your age: ");
-        int age = s.nextInt();
-
-        System.out.printf("%s%n%d%n", name, age);
-        
-        s.close();
+    public static void sayHello(String name) {
+        System.out.println("Hello, " + name);
     }
 }
