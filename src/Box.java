@@ -3,6 +3,26 @@ public class Box{
     private int _width;
     private int _height;
 
+    public Box(){}
+
+    public Box(int length){
+        this.set_length(length);
+        this.set_height(length);
+        this.set_width(length);
+
+    }
+
+    public Box(int length, int width){
+        this.set_length(length);
+        this.set_width(width);
+    }
+
+    public Box(int length, int width, int height){
+        this.set_length(length);
+        this.set_width(width);
+        this.set_height(height);
+    }
+
     public void set_length(int length) {
         this._length = length;
     }
