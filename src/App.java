@@ -6,7 +6,11 @@ public class App {
         student.set_sex("Male");
         student.set_department("Software Engineering");
         student.set_gpa(3.5f);
-        student.printInfo();
+        student.set_courseCode("12qq2");
+        student.set_courseName("Fundamental of Software engineering");
+        student.set_courseType("online");
+        student.set_creditHour(5);
+        student.displayStudentInfo();
 
         Student hose = new Student();
         hose.set_name("Hose Adem");
@@ -14,11 +18,10 @@ public class App {
         hose.set_sex("Male");
         hose.set_department("Software Engineering");
         hose.set_gpa(3.9f);
-
-        hose.printInfo();
-    }
-
-    public static void print(String value) {
-        System.out.println(value);
+        hose.set_courseCode("12qq2");
+        hose.set_courseName("Fundamental of Software engineering");
+        hose.set_courseType("online");
+        hose.set_creditHour(5);
+        hose.displayStudentInfo();
     }
 }
