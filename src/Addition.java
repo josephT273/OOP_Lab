@@ -33,6 +33,20 @@ public class Addition {
         int k = -1;
         System.out.println((k >> 24));
         System.out.println((k >>> 24));
+
+        int w = (10 + 21) > 30 ? (21 + 31) : (20 + 2);
+        System.out.println(w);
+
+        if (10 + 21 > 30) {
+            System.out.println("Greaterthan 30");
+        }else{
+            System.out.println("Lessthan 30");
+        }
+
+        String arg[] = {"Hello", "world"};
+        for (String string : arg) {
+            System.out.println(string);
+        }
     }
 
     
